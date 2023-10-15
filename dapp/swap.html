@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swap - Pandora Swap</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/metamask-styles.css">
+  <link rel="stylesheet" href="css/swap.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-link">Back to Home</a>
+    <a href="account.html" class="account-link">Account</a>
+    <a href="liquidity.html" class="page-link">Liquidity</a>
+    <a href="pool.html" class="page-link">Pool</a>
+    <a href="about.html" class="page-link">About</a>
+  </header>
+
+  <div class="content">
+    <h1>Swap Tokens</h1>
+
+    <div class="swap-box">
+      <h2>Swap Your Tokens</h2>
+      <p>Here is the content for swapping tokens.</p>
+      <button class="swap-button" onclick="swapTokens()">Swap Now</button>
+    </div>
+
+    <div class="token-selection">
+      <label for="from-token">From Token:</label>
+      <select id="from-token">
+        <!-- Options for from token -->
+        <option value="eth">ETH</option>
+        <option value="bnb">BNB</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+
+    <div class="token-selection">
+      <label for="to-token">To Token:</label>
+      <select id="to-token">
+        <!-- Options for to token -->
+        <option value="usdt">USDT</option>
+        <option value="dai">DAI</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+
+    <div class="token-selection">
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" placeholder="Enter amount">
+    </div>
+
+    <button class="swap-button" onclick="swapTokens()">Swap</button>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2023 Pandora Swap. All rights reserved. Powered by Pandora Labs.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Account information for Pandora Swap DApp">
+  <title>Account Info - Pandora Swap</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/metamask-styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Your Account Info</h1>
+    <div class="account-info">
+      <img src="images/metamask_logo.png" alt="Metamask Logo" class="metamask-logo">
+      <p>Your Ethereum Address: <span id="user-address"></span></p>
+      <p>Your Balance: <span id="user-balance"></span> ETH</p>
+    </div>
+
+    <button onclick="toggleMetamask()" id="toggle-button" class="toggle-button">Connect Metamask</button>
+  </div>
+  <div id="wallet-connected-message" style="display: none;">
+    Wallet connected: <span id="user-address"></span>
+  </div>
+  
+  <div class="transaction-history">
+    <h2>Transaction History</h2>
+    <ul>
+      <li>
+        <strong>Transaction ID:</strong> <span>0x1234567890abcdef</span>
+        <strong>Amount:</strong> <span>0.5 ETH</span>
+      </li>
+      <!-- Add more transaction entries as needed -->
+    </ul>
+  </div>
+
+  <a href="index.html" class="back-link">Back to Home</a>
+  <a href="swap.html" class="page-link">Swap</a>
+  <a href="liquidity.html" class="page-link">Liquidity</a>
+  <a href="pool.html" class="page-link">Pool</a>
+  <a href="about.html" class="page-link">About</a>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <footer class="footer">
+    <p class="footer-text">&copy; 2023 Pandora Swap. All rights reserved. Powered by Pandora Labs.</p>
+  </footer>
+</body>
+</html>

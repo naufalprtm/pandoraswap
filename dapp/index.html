@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/metamask-styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <title>Pandora</title>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="banner">Pandora Swap</div>
+      <button onclick="connectMetamask()" class="connect-button">
+        <img src="images/metamask_logo.png" alt="Metamask Logo">
+        Connect Metamask
+      </button>
+    </div>
+    <div id="wallet-connected-message" style="display: none;">
+      Wallet connected: <span id="user-address"></span>
+    </div>
+    
+    <a href="account.html" class="account-link">Account</a>
+    <a href="swap.html" class="page-link">Swap</a>
+    <a href="liquidity.html" class="page-link">Liquidity</a>
+    <a href="pool.html" class="page-link">Pool</a>
+    <a href="about.html" class="page-link">About</a>
+  </header>
+
+  <div class="content">
+    <img src="images/Pandora.gif" alt="Logo GIF">
+    <h1>My Decentralized Application</h1>
+
+    <p>Pandora Swap is a decentralized application (DApp) built on a blockchain platform, aiming to provide a decentralized exchange (DEX) and liquidity provision platform for users to trade various cryptocurrencies and tokens in a secure and trustless environment.</p>
+    <ul>
+      <li>Decentralized Exchange (DEX): Pandora Swap allows users to trade a wide range of cryptocurrencies and tokens directly from their wallets without relying on a centralized authority.</li>
+      <li>Liquidity Provision: Users can provide liquidity to different cryptocurrency pairs on Pandora Swap and earn rewards in return.</li>
+      <li>Automated Market Making (AMM): Pandora Swap utilizes an AMM mechanism to automatically determine the price of assets based on the ratio of tokens in the liquidity pool.</li>
+      <li>Security and Trustlessness: Pandora Swap employs robust security measures and smart contracts on the blockchain to ensure a high level of security and trustlessness in transactions and fund management.</li>
+      <li>Community Governance: The development and improvement of Pandora Swap are guided by the community through a decentralized governance model.</li>
+      <li>Token Integration: Pandora Swap may have its native utility token, which could be utilized for governance, fee discounts, rewards, and other ecosystem-related activities, enhancing the overall user experience and engagement.</li>
+    </ul>
+    <p>Overall, Pandora Swap provides a robust and decentralized platform for users to engage in cryptocurrency trading and liquidity provision, promoting financial inclusivity, security, and community involvement within the blockchain ecosystem.</p>
+  </div>
+
+  <footer class="footer">
+    <p class="footer-text">&copy; 2023 Pandora Swap. All rights reserved. Powered by Pandora Labs.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

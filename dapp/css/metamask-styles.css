@@ -1,0 +1,70 @@
+/* Metamask-specific styles */
+
+.metamask-logo {
+    width: 30px;
+    height: 30px;
+    margin-left: auto; /* Move the logo to the right */
+}
+
+.connect-button, .disconnect-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.connect-button {
+    background-color: #008CBA; /* Blue color */
+    color: white; /* White text */
+}
+
+.disconnect-button {
+    background-color: #F89D2A;
+    color: white;
+}
+
+.connect-button:hover {
+    background-color: #005F6B; /* Darker blue on hover */
+}
+
+.disconnect-button:hover {
+    background-color: #E68111;
+}
+
+/* Additional styles for Metamask popup/modal */
+#metamask-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+#metamask-popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#metamask-popup-content h2 {
+    margin-bottom: 10px;
+}
+
+#metamask-popup-content button {
+    padding: 10px 20px;
+    border: none;
+    background: #3498db;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#metamask-popup-content button:hover {
+    background: #2980b9;
+}

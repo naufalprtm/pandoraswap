@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #102b76, #000000); /* Black to purple gradient */
+    color: white; /* Set text color to white */
+}
+
+header {
+    background: linear-gradient(90deg, #02a1db, #1d8fff);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 100px; /* Adjusted spacing from the header */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.account-info p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.toggle-button:hover {
+    background-color: #005F6B;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    color: #2980b9;
+}
+
+.footer {
+    background: linear-gradient(90deg, #8a2387, #e94057, #f27121);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+.footer-text {
+    margin: 0;
+}
